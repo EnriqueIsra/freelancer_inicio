@@ -8,7 +8,12 @@
 
 html{
     font-size: 62.5%;
+    box-sizing: border-box;
 }
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body{
     font-size: 16px;
     font-family: 'Krub', sans-serif;
@@ -53,10 +58,6 @@ body{
     font-weight: bold;
     padding: 1rem;
 }
-
-@media (min-width: 770px) {
-
-}  
 
 .navegacion-principal a:hover {
     color: var(--oscuro);

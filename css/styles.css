@@ -5,6 +5,8 @@
   --secundario: #0097a7;
   --gris: #757575;
   --degradado: #8b6fd3;
+  --gris_clarito:  #eeeeee;
+  ;
 }
 
 /* CSS globales */
@@ -28,7 +30,7 @@ body {
 }
 .sombra {
   box-shadow: -1px 4px 14px 3px rgba(80, 212, 252, 0.9);
-  background-color: var(--blanco);
+  background-color: var(--gris_clarito);
   padding: 1.5rem;
   border-radius: 2rem;
 }
@@ -134,5 +136,28 @@ h3 {
   .servicios {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
   }
+}
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servicio h3{
+    font-weight: normal;
+    color: var(--secundario);
+}
+.servicio p{
+    text-align: center;
+    line-height: 2;
+}
+.servicio .iconos {
+    width: 15rem;
+    height: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }

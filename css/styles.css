@@ -26,6 +26,12 @@ body {
     var(--blanco) 100%
   ); /* linea para agregar un efecto de degradado, color de fondo degradado */
 }
+.sombra{
+    box-shadow: -1px 4px 14px 3px rgba(80, 212, 252, 0.9);
+    background-color: var(--blanco);
+    padding: 1.5rem;
+    border-radius: 2rem;
+}
 .contenedor {
   max-width: 120rem;
   margin: 0 auto;
@@ -101,6 +107,7 @@ h3 {
   background-size: cover;
   height: 450px;
   position: relative;
+  margin-bottom: 1.5rem;
 }
 .contenido-hero {
   position: absolute;

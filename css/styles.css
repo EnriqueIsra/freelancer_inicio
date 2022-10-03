@@ -26,11 +26,11 @@ body {
     var(--blanco) 100%
   ); /* linea para agregar un efecto de degradado, color de fondo degradado */
 }
-.sombra{
-    box-shadow: -1px 4px 14px 3px rgba(80, 212, 252, 0.9);
-    background-color: var(--blanco);
-    padding: 1.5rem;
-    border-radius: 2rem;
+.sombra {
+  box-shadow: -1px 4px 14px 3px rgba(80, 212, 252, 0.9);
+  background-color: var(--blanco);
+  padding: 1.5rem;
+  border-radius: 2rem;
 }
 .contenedor {
   max-width: 120rem;
@@ -128,4 +128,11 @@ h3 {
 .contenido-hero .ubicacion {
   display: flex;
   align-items: flex-end;
+}
+/* Estilos de "mis servicios" */
+@media (min-width: 768px) {
+  .servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

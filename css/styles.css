@@ -4,7 +4,7 @@
   --primario: #81ff81;
   --secundario: #0097a7;
   --gris: #757575;
-  --degradado: #8b6fd3;
+  --degradado: #acfbac;
   --gris_clarito: #eeeeee;
 }
 
@@ -49,11 +49,15 @@ body {
   margin-top: 1rem;
   width: 90%;
   text-align: center;
+  border: none;
 }
 @media (min-width: 768px) {
   .boton {
     width: auto;
   }
+}
+.boton:hover {
+  cursor: pointer;
 }
 /* Tipografía */
 h1 {
@@ -73,6 +77,21 @@ h3 {
 /* Titulos */
 .titulo span {
   font-size: 2rem;
+}
+/* Utilidades */
+.w-dp-100 {
+  width: 100%;
+}
+@media (min-width: 768px) {
+    .w-dp-100 {
+      width: auto;
+    }
+} 
+.flex {
+  display: flex;
+}
+.alinear-derecha {
+  justify-content: flex-end;
 }
 /* Navegación principal */
 .nav-bg {
@@ -178,5 +197,24 @@ h3 {
   font-size: 1.6rem;
   margin-bottom: 1rem;
   color: var(--primario);
-  text-transform: uppercase;
+  text-transform: lowercase;
+}
+/* inputs del formulario */
+.contenedor-campos {
+
+}
+.campo {
+  margin-bottom: 1rem;
+}
+.campo label {
+  color: var(--blanco);
+  font-weight: bold;
+  margin-bottom: .5rem;
+  display: block;
+}
+.input-text{
+  width: 100%;
+  border-radius: 1rem;
+  border: none;
+  padding: .5rem;
 }
